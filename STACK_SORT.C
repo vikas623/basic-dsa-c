@@ -10,12 +10,12 @@ struct stack
 
 void initStack(struct stack **s) 
 { 
-    *s = NULL; 
+    *s = 0; 
 } 
 
 int isEmpty(struct stack *s) 
 { 
-    if (s == NULL) 
+    if (s == 0) 
         return 1; 
     return 0; 
 } 
@@ -24,7 +24,7 @@ void push(struct stack **s, int x)
 { 
     struct stack *p = (struct stack *)malloc(sizeof(*p)); 
   
-    if (p == NULL) 
+    if (p == 0) 
     { 
         fprintf(stderr, "Memory allocation failed.\n"); 
         return; 
@@ -64,7 +64,7 @@ void sortedInsert(struct stack **s, int x)
     int temp = pop(s); 
     sortedInsert(s, x); 
   
-    push(s, temp); 
+    push(s,temp); 
 } 
   
 void sortStack(struct stack **s) 
