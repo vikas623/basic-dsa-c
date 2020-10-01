@@ -3,6 +3,7 @@ int stack[100],choice,n,top,x,i;
 void push(int);
 int pop(void);
 void display(void);
+void peek(void);
 int main()
 {
     int x;
@@ -11,7 +12,7 @@ int main()
     scanf("%d",&n);
     printf("\n\t STACK OPERATIONS USING ARRAY");
     printf("\n\t--------------------------------");
-    printf("\n\t 1.PUSH\n\t 2.POP\n\t 3.DISPLAY\n\t 4.EXIT");
+    printf("\n\t 1.PUSH\n\t 2.POP\n\t 3.DISPLAY\n\t 5.PEEK\n\t 4.EXIT");
     do
     {
         printf("\n Enter the Choice:");
@@ -40,6 +41,10 @@ int main()
                 printf("\n\t EXIT POINT ");
                 break;
             }
+            case 5:
+                {
+                    peek();
+                }
             default:
             {
                 printf ("\n\t Please Enter a Valid Choice(1/2/3/4)");
@@ -93,3 +98,13 @@ void display()
      
    
 }
+void peek()
+{    int data;
+    if(top=-1)
+    printf("Stack is empty");
+    else
+     data=stack[top];
+     printf("the top element is %d",data);
+}
+    
+        
