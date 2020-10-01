@@ -15,7 +15,7 @@ int main()
     int item,t,j;
          head=NULL;
          endnode=NULL;
-         printf("Enter no. of elements: ");
+         printf("Enter no. of element in the linked list: ");
          scanf("%d",&n);
          for(j=0;j<n;j++)
          {
