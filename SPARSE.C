@@ -39,7 +39,7 @@ void spar(int a,int b,int c)
 
 void printt(struct node *p)
 {
-    printf("\n\nNUM   ROW   COL\n");
+    printf("\n\nNUM  row   COL\n");
     while(p!=NULL)
     {
         printf("\n %d     %d     %d",p->num,p->row,p->col);
@@ -76,6 +76,7 @@ int main()
     }
 
     printt(spf);
+    printf("**THANK YOU**");
     return 0;
 
 
