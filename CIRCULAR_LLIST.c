@@ -11,14 +11,14 @@ struct node* create(int d)
 {
     newnd=((struct node*)malloc(sizeof(struct node)));
     newnd->data=d;
-    newnd->next=NULL;
+    newnd->next=0;
     return newnd;
 }
 
 void firstt()
 {
     int v;
-    printf("\nEnter value: ");
+    printf("\nEnter value of first node: ");
     scanf("%d", &v);
     newnd=create(v);
     if(first==NULL && last==NULL)
